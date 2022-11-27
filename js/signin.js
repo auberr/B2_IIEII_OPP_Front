@@ -59,3 +59,15 @@ async function handleSignin(){
         window.location.replace("main.html")
     }
 }
+
+
+
+async function handleKakaoSignin(){
+    Kakao.init('40ff260d348d97f586de1e3a150a7bcb');
+    
+    Kakao.Auth.authorize({
+        redirectUri: 'http://127.0.0.1:5500/html/main.html',
+        prompts: 'login',
+        });
+
+}
