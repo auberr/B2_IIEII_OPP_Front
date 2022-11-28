@@ -1,4 +1,4 @@
-const main_url = "http://127.0.0.1:8000"
+const main_url = "http://15.164.227.242"
 
 window.onload = () => {
     setTimeout(() => load_article(), 3000)
@@ -34,6 +34,7 @@ async function create_article(){
     const title = document.getElementById('title').value
     const content = document.getElementById('content').value
     console.log(title, content, response_json.id)
+    console.log(response_json)
 
     const response = await fetch (`${main_url}/articles/imgtoop/2/`,{
         headers : {

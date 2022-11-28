@@ -1,4 +1,4 @@
-const main_url = "http://127.0.0.1:8000"
+const main_url = "http://15.164.227.242"
 
 window.onload = () => {
     load_detail();

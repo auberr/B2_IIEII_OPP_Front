@@ -1,4 +1,4 @@
-const main_url = "http://127.0.0.1:8000"
+const main_url = "http://15.164.227.242"
 const payload = localStorage.getItem('payload')
 const personObj = JSON.parse(payload)
 const userId = personObj['user_id']
